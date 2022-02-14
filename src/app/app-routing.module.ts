@@ -4,7 +4,7 @@ import { DefaultLayoutComponent } from './components/default-layout/default-layo
 import { MoviesComponent } from './components/movies/movies.component';
 
 const routes: Routes = [
-  {path: "default-layout", component: DefaultLayoutComponent },
+  {path: "", component: DefaultLayoutComponent },
   {path: "movies", component: MoviesComponent },
 ];
 

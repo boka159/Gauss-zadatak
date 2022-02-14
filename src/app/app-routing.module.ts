@@ -4,9 +4,8 @@ import { DefaultLayoutComponent } from './components/default-layout/default-layo
 import { MoviesComponent } from './components/movies/movies.component';
 
 const routes: Routes = [
-  {path: "", component: DefaultLayoutComponent },
+  {path: "default-layout", component: DefaultLayoutComponent },
   {path: "movies", component: MoviesComponent },
-
 ];
 
 @NgModule({

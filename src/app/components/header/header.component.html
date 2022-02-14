@@ -1,1 +1,10 @@
-<header>header works!</header>
+<header>
+    <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
+    <h1 style="font-weight:normal">Sidebar</h1>
+    
+    <p-button type="button" (click)="visibleSidebar1 = false" (click)="Movies('movies')" label="Movies" styleClass="p-button-success"></p-button>
+
+</p-sidebar>
+</header>
+
+<p-button type="button" (click)="visibleSidebar1 = true" icon="pi pi-bars" ></p-button>

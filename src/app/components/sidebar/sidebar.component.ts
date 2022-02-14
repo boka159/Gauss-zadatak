@@ -6,7 +6,7 @@ import { PrimeNGConfig } from 'primeng/api';
   templateUrl: './sidebar.component.html',
   styles: [`
   :host ::ng-deep button {
-      margin-right: .25em;
+      margin-right: .5em;
   }
 `]
 })
@@ -15,7 +15,8 @@ export class SidebarComponent implements OnInit {
   
   constructor(private primengConfig: PrimeNGConfig) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.primengConfig.ripple = true;
   }
 
 }

@@ -11,10 +11,9 @@ import { PrimeNGConfig } from 'primeng/api';
 `]
 })
 export class SidebarComponent implements OnInit {
-
   visibleSidebar1: any;
-
-  constructor(private primengConfig: PrimeNGConfig) { }
+  
+  constructor(private primengConfig: PrimeNGConfig) {}
 
   ngOnInit(): void {
   }

@@ -29,8 +29,6 @@ import {ButtonModule} from 'primeng/button';
     BrowserAnimationsModule,
     SidebarModule,
     ButtonModule,
-
-
   ],
   providers: [],
   bootstrap: [AppComponent]

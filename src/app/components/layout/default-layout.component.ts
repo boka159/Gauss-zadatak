@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
-  selector: 'app-default-layout',
+  selector: 'app-layout',
   templateUrl: './default-layout.component.html',
   styleUrls: ['./default-layout.component.css']
 })

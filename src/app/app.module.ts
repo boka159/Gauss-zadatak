@@ -8,12 +8,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { DefaultLayoutComponent } from './components/default-layout/default-layout.component';
+import { DefaultLayoutComponent } from './components/layout/default-layout.component';
 import { MoviesComponent } from './components/movies/movies.component';
 
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
+import { MoviesListComponent } from './components/movies/movies-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RippleModule } from 'primeng/ripple';
     HeaderComponent,
     SidebarComponent,
     DefaultLayoutComponent,
-    MoviesComponent
+    MoviesComponent,
+    MoviesListComponent
   ],
   imports: [
     BrowserModule,

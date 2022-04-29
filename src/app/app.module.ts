@@ -15,6 +15,7 @@ import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 import { MoviesListComponent } from './components/movies/movies-list.component';
+import { MoviesListItemComponent } from './components/movies/components/movies-list-item.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { MoviesListComponent } from './components/movies/movies-list.component';
     SidebarComponent,
     DefaultLayoutComponent,
     MoviesComponent,
-    MoviesListComponent
+    MoviesListComponent,
+    MoviesListItemComponent,
+    
   ],
   imports: [
     BrowserModule,

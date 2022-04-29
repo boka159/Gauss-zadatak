@@ -1,0 +1,10 @@
+.movies-list-item{
+    border: solid 2px red;
+    height: 320px;
+    width: 262px;
+
+    background-color: #fff;
+
+    -webkit-box-shadow: 5px 9px 15px 5px #000000; 
+    box-shadow: 5px 9px 15px 5px #000000;
+}

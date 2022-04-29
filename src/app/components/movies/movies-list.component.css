@@ -1,0 +1,31 @@
+.main-container{
+    border: solid 2px blue;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.central-container{
+    border: solid 2px green;
+    height: 690px;
+    width: 940px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.movies-list-item{
+    border: solid 2px red;
+    height: 320px;
+    width: 262px;
+
+    -webkit-box-shadow: 5px 9px 15px 5px #000000; 
+    box-shadow: 5px 9px 15px 5px #000000;
+
+    
+}

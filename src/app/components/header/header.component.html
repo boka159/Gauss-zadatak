@@ -1,4 +1,6 @@
-<header>
+<header class="main-header">
+    <p-button type="button" (click)="visibleSidebar1 = true" icon="pi pi-bars" ></p-button>
+    
     <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
     <h1 style="font-weight:normal">Sidebar</h1>
     
@@ -7,4 +9,3 @@
 </p-sidebar>
 </header>
 
-<p-button type="button" (click)="visibleSidebar1 = true" icon="pi pi-bars" ></p-button>

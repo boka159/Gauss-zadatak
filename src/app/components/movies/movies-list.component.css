@@ -1,10 +1,12 @@
 .main-container{
     border: solid 2px blue;
     height: 100%;
-    
     display: flex;
+    /* flex-wrap: wrap; */
+
     justify-content: center;
     align-items: center;
+    
 }
 
 .central-container{
@@ -26,6 +28,31 @@
 
     -webkit-box-shadow: 5px 9px 15px 5px #000000; 
     box-shadow: 5px 9px 15px 5px #000000;
+}
 
+.prethodna:hover{
+    background-color: green;
+}
+.prethodna{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: #99bf84;
+    align-self: flex-end;
+
+
+    -webkit-box-shadow: 5px 9px 15px 5px #000000; 
+    box-shadow: 5px 9px 15px 5px #000000;
+}
+
+.sljedeća:hover{
+    background-color: green;
+}
+.sljedeća{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: #99bf84;
+    align-self: flex-end;
     
+    -webkit-box-shadow: 5px 9px 15px 5px #000000; 
+    box-shadow: 5px 9px 15px 5px #000000;
 }

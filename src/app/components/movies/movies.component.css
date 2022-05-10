@@ -1,5 +1,60 @@
 .top-container {
     border: solid 2px blue;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
     
 }
+
+.movies-details-central-container{
+    border: solid 2px green;
+    height: 690px;
+    width: 940px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.movies-details-central-container > div {
+    border: solid 2px black;
+    height: 100%;
+}
+
+.movie-details-cont > img {
+    max-width: 315px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.cover-photo-cont{
+    width: 315px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.movie-details-cont{
+    background-color: #99bf84;
+    width: 625px;
+    overflow: hidden;
+}
+
+.wishlist-btn:hover{
+    background-color: green;
+}
+.wishlist-btn{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: #dce9d5;
+    
+    -webkit-box-shadow: 5px 9px 15px 5px #000000; 
+    box-shadow: 5px 9px 15px 5px #000000;
+}
+

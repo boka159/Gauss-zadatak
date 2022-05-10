@@ -71,9 +71,10 @@
 }
 
 .btn-holder{
-    background-color: red;
     z-index: 2;
+    position: relative;
 }
+
 
 /* .movies-list-item{
     border: solid 2px red;

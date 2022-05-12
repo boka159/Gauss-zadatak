@@ -5,7 +5,15 @@
 
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     
+}
+
+.top-container > .button-back-next{
+    display: flex;
+    flex-direction: row;
+    gap: 310px;
+    padding-top: 50px;
 }
 
 .movies-details-central-container{
@@ -25,25 +33,82 @@
     height: 100%;
 }
 
-.movie-details-cont > img {
-    max-width: 315px;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-}
-
 .cover-photo-cont{
     width: 315px;
-
+    height: 100%;
+    
     overflow: hidden;
     position: relative;
+}
+
+.cover-photo-cont > img {
+    max-width: 315px;
+
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+
 }
 
 .movie-details-cont{
     background-color: #99bf84;
     width: 625px;
     overflow: hidden;
+
+}
+
+.movie-details-cont > .wishlist-btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #fff;
+    padding-left: 31px;
+    padding-top: 28px;
+}
+
+.year-duration{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    padding-right: 31px;
+    padding-top: 37px;
+}
+
+.ganre-summary-director{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.ganre{
+    padding-top: 23px;
+    padding-bottom: 14px;
+}
+
+.summary{
+    padding-bottom: 14px;
+}
+
+.director{
+    padding-bottom: 14px;
+}
+
+.wishlist-btn-container{
+   padding-top: 50px;
 }
 
 .wishlist-btn:hover{
@@ -58,3 +123,29 @@
     box-shadow: 5px 9px 15px 5px #000000;
 }
 
+.prethodna:hover{
+    background-color: green;
+}
+.prethodna{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: #99bf84;
+    /* align-self: flex-end; */
+
+
+    -webkit-box-shadow: 5px 9px 15px 5px #000000; 
+    box-shadow: 5px 9px 15px 5px #000000;
+}
+
+.sljedeća:hover{
+    background-color: green;
+}
+.sljedeća{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: #99bf84;
+    /* align-self: flex-end; */
+    
+    -webkit-box-shadow: 5px 9px 15px 5px #000000; 
+    box-shadow: 5px 9px 15px 5px #000000;
+}

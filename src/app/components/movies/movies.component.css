@@ -97,15 +97,31 @@
 
 .ganre{
     padding-top: 23px;
-    padding-bottom: 14px;
+    padding-bottom: 25px;
 }
 
 .summary{
-    padding-bottom: 14px;
+    padding-bottom: 25px;
 }
 
 .director{
-    padding-bottom: 14px;
+    padding-bottom: 25px;
+}
+
+.main-cast{
+    display: flex;
+    flex-direction: row;
+
+    padding-left: 25px;
+
+}
+
+.main-cast > div{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    padding-left: 5px;
+
 }
 
 .wishlist-btn-container{
@@ -117,11 +133,12 @@
 }
 .wishlist-btn{
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background-color: #dce9d5;
+    width: 413px;
     
-    -webkit-box-shadow: 5px 9px 15px 5px #000000; 
-    box-shadow: 5px 9px 15px 5px #000000;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 3px 3px 12px 0px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 3px 3px 12px 0px rgba(0,0,0,0);
 }
 
 .prethodna:hover{

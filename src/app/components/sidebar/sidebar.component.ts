@@ -4,11 +4,8 @@ import { PrimeNGConfig } from 'primeng/api';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styles: [`
-  :host ::ng-deep button {
-      margin-right: .5em;
-  }
-`]
+  styleUrls: ['./sidebar.component.css']
+  
 })
 export class SidebarComponent implements OnInit {
   visibleSidebar1: any;

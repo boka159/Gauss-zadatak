@@ -42,7 +42,7 @@
 }
 
 .cover-photo-cont > img {
-    max-width: 315px;
+    height: 100%;
 
     /* position: absolute;
     top: 0;

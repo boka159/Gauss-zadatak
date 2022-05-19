@@ -16,6 +16,7 @@ import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 import { MoviesListComponent } from './components/movies/movies-list.component';
 import { MoviesListItemComponent } from './components/movies/components/movies-list-item.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { MoviesListItemComponent } from './components/movies/components/movies-l
     SidebarModule,
     ButtonModule,
     RippleModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

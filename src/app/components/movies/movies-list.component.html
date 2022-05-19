@@ -1,13 +1,13 @@
 <!-- gornji -->
+
+<h1 *ngFor="let Item of moviesList">{{Item}}</h1>
+
 <div class="main-container">
      <!-- centralni  -->
     <div class="central-container">
-        <movies-list-item></movies-list-item>
-        <movies-list-item></movies-list-item>
-        <movies-list-item></movies-list-item>
-        <movies-list-item></movies-list-item>
-        <movies-list-item></movies-list-item>
-        <movies-list-item></movies-list-item>
+        <movies-list-item *ngFor="let movieItem of moviesList">
+
+        </movies-list-item>
     </div>
     
     <div class="button-back-next">

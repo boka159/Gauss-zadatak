@@ -5,12 +5,12 @@ import { MoviesListComponent } from './components/movies/movies-list.component';
 import { MoviesComponent } from './components/movies/movies.component';
 
 const routes: Routes = [
-  {path: "", component: MoviesListComponent },
-  {path: "movies", component: MoviesComponent },
+  { path: "", component: MoviesListComponent },
+  { path: "movies", component: MoviesComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{enableTracing: true})],
+  imports: [RouterModule.forRoot(routes, { enableTracing: false })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

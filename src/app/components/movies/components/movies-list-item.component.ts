@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
+import { MovieListItem } from "../movie.types";
 
 @Component({
     selector: 'movies-list-item',
@@ -7,5 +8,5 @@ import { Component } from "@angular/core";
 })
 
 export class MoviesListItemComponent {
-    
+    @Input('movieItemInput') movieItem: MovieListItem; //kad šaljemo podatke iz parent komponente u child komponentu
 }

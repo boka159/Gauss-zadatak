@@ -1,17 +1,15 @@
 <!-- gornji -->
 
-<h1 *ngFor="let Item of moviesList">{{Item}}</h1>
-
 <div class="main-container">
-     <!-- centralni  -->
+    <!-- centralni  -->
     <div class="central-container">
-        <movies-list-item *ngFor="let movieItem of moviesList">
+        <movies-list-item *ngFor="let movieItem of moviesList" [movieItemInput]="movieItem">
 
         </movies-list-item>
     </div>
-    
+
     <div class="button-back-next">
         <button pButton label="Prethodna" icon="pi pi-angle-left" class="prethodna"></button>
-        <button pButton label="Sljedeća" icon="pi pi-angle-right" iconPos="right" class="sljedeća" ></button>
+        <button pButton label="Sljedeća" icon="pi pi-angle-right" iconPos="right" class="sljedeća"></button>
     </div>
 </div>

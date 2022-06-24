@@ -15,7 +15,8 @@ export class MoviesService {
 
     constructor(private http: HttpClient) { }
 
-    getList(): Observable<MovieListResponse> { //'https://api.themoviedb.org/3/movie/top_rated?api_key=6b9dbe6a2b9004651d9f522effa9c959'
+    getList(): Observable<MovieListResponse> {
+        //'https://api.themoviedb.org/3/movie/top_rated?api_key=6b9dbe6a2b9004651d9f522effa9c959'
         const requestURL = `${this._baseApiUrl}${this._movieListEndpoint}`
         const queryParams = new HttpParams()
             .set('api_key', this._apiKey)

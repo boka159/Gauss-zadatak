@@ -17,6 +17,7 @@ export class MoviesListComponent implements OnInit {
     ngOnInit() {
         this.moviesService.getList().subscribe((response: MovieListResponse) => {
             this.moviesList = response.results; //uzmi varijablu this.moviesList i postavi joj vrijednost iz response.results
+
         })
         console.log(this.moviesList);
         // this.moviesService.getList().subscribe(this.movieListResponseCallback)

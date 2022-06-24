@@ -1,4 +1,4 @@
-.movies-list-item{
+.movies-list-item {
     border: solid 2px red;
     height: 320px;
     width: 262px;
@@ -8,12 +8,12 @@
 
     display: flex;
     flex-direction: column;
-  
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 3px 3px 12px 0px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 3px 3px 12px 0px rgba(0,0,0,0);
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 3px 3px 12px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 3px 3px 12px 0px rgba(0, 0, 0, 0);
 }
 
-.movies-list-item > div {
+.movies-list-item>div {
     height: 100%;
     border: solid 2px black;
 }
@@ -26,7 +26,7 @@
     height: 30%;
 } */
 
-.movies-item-img-container > img{
+.movies-item-img-container>img {
     max-width: 262px;
     z-index: -1;
 }
@@ -40,37 +40,39 @@
 .movies-item-upper-container {
     overflow: hidden;
     position: relative;
-    
+
 }
 
-.movies-item-bottom-container > span {
+.movies-item-bottom-container>span {
     font-size: 24px;
     color: #fff;
     margin-top: 30px;
     margin-bottom: 20px;
-    
+    text-align: center;
+
 }
 
-.movies-item-bottom-container{
+.movies-item-bottom-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
 
-.p-button1:hover{
+.p-button1:hover {
     background-color: green;
 }
-.p-button1{
+
+.p-button1 {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #dce9d5;
     grid-row: 4;
 
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 3px 3px 12px 0px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 3px 3px 12px 0px rgba(0,0,0,0);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 3px 3px 12px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 3px 3px 12px 0px rgba(0, 0, 0, 0);
 }
 
-.btn-holder{
+.btn-holder {
     z-index: 2;
     position: relative;
 }

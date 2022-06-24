@@ -9,4 +9,5 @@ import { MovieListItem } from "../movie.types";
 
 export class MoviesListItemComponent {
     @Input('movieItemInput') movieItem: MovieListItem; //kad šaljemo podatke iz parent komponente u child komponentu
+    // @Input('movieCoverPhotoInput') movieCoverPhoto: MovieListItem;
 }

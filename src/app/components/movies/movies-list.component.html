@@ -3,9 +3,8 @@
 <div class="main-container">
     <!-- centralni  -->
     <div class="central-container">
-        <movies-list-item *ngFor="let movieItem of moviesList" [movieItemInput]="movieItem">
-            <!-- <movies-list-item *ngFor="let movieCoverPhoto of moviesList" [movieCoverPhotoInput]="movieCoverPhoto">
-            </movies-list-item> -->
+        <movies-list-item *ngFor="let movieItem of moviesList.slice(0,6)" [movieItemInput]="movieItem">
+
         </movies-list-item>
     </div>
 

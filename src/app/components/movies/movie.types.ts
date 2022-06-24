@@ -7,7 +7,7 @@ export type MovieListResponse = {
 };
 
 export type MovieListItem = {
-    poster_path: string;
+    backdrop_path: string;
     original_title: string;
     id: number;
     overview: string;

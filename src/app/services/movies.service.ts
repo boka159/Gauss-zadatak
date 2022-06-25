@@ -20,7 +20,8 @@ export class MoviesService {
         const requestURL = `${this._baseApiUrl}${this._movieListEndpoint}`
         const queryParams = new HttpParams()
             .set('api_key', this._apiKey)
-            .set('page', 1)
+            .set('page', 2)
+
         return this.http.get<MovieListResponse>(requestURL, { params: queryParams })
     }
 

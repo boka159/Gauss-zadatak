@@ -15,12 +15,12 @@ export class MoviesService {
 
     constructor(private http: HttpClient) { }
 
-    getList(currentPage: number): Observable<MovieListResponse> {
+    getMoviesList(pageNum: number): Observable<MovieListResponse> { //getMoviesList je metoda koja prima page number kao argument i na temelju istog dohvaća tu stranicu s listom filmova.
         //'https://api.themoviedb.org/3/movie/top_rated?api_key=6b9dbe6a2b9004651d9f522effa9c959'
         const requestURL = `${this._baseApiUrl}${this._movieListEndpoint}`
         const queryParams = new HttpParams()
             .set('api_key', this._apiKey)
-            .set('page', currentPage)
+            .set('page', pageNum)
         return this.http.get<MovieListResponse>(requestURL, { params: queryParams })
     }
 

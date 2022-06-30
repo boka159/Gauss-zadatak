@@ -19,12 +19,7 @@ export class MoviesListComponent implements OnInit {
     constructor(private moviesService: MoviesService) { }
 
     ngOnInit() {
-        this.moviesService.getList(this.currentPage).subscribe((response: MovieListResponse) => {
-            this.moviesList = response.results; //uzmi varijablu this.moviesList i postavi joj vrijednost iz response.results
-            this.currentPage = response.page;
-        })
-        console.log(this.moviesList);
-        // this.moviesService.getList().subscribe(this.movieListResponseCallback)
+        this.getMoviesList();
     }
 
     // movieListResponseCallback = (response: MovieListResponse) => {
@@ -32,17 +27,22 @@ export class MoviesListComponent implements OnInit {
 
     //     console.log(this)
     // }
-    onBack() {
-        this.moviesService.getList(this.currentPage).subscribe((response: MovieListResponse) => {
-            this.currentPage = this.currentPage - 1;
+
+    getMoviesList() {
+        this.moviesService.getMoviesList(this.currentPage).subscribe((response: MovieListResponse) => {
+            this.moviesList = response.results; //uzmi varijablu this.moviesList i postavi joj vrijednost iz response.results
         })
     }
 
-    onNext() {
-        this.moviesService.getList(this.currentPage).subscribe((response: MovieListResponse) => {
-            this.currentPage = this.currentPage + 1;
-        })
+    onBack() {
+        this.currentPage = this.currentPage - 1;
+        this.getMoviesList();
+    }
 
+
+    onNext() {
+        this.currentPage = this.currentPage + 1;
+        this.getMoviesList();
     }
 
 }

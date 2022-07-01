@@ -9,13 +9,14 @@ import { PrimeNGConfig } from 'primeng/api';
 })
 export class HeaderComponent implements OnInit {
 
-visibleSidebar1: any;
+  visibleSidebar1: any;
 
   constructor(private primengConfig: PrimeNGConfig, private router: Router) { }
 
   ngOnInit(): void {
   }
-  Movies(pageName: string): void {this.router.navigate([`${pageName}`]);
+  Movies(pageName: string): void {
+    this.router.navigate([`${pageName}`]);
   }
-  }
+}
 

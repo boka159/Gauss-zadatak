@@ -43,6 +43,7 @@ export class MoviesListComponent implements OnInit {
     onNext() {
         this.currentPage = this.currentPage + 1;
         this.getMoviesList();
+
     }
 
 }

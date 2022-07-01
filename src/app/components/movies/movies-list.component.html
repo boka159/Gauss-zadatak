@@ -9,8 +9,9 @@
     </div>
 
     <div class="button-back-next">
-        <button pButton label="Prethodna" (click)="onBack()" icon="pi pi-angle-left" class="prethodna"></button>
-        <button pButton label="Sljedeća" (click)="onNext()" icon="pi pi-angle-right" iconPos="right"
-            class="sljedeća"></button>
+        <button pButton label="Prethodna" (click)="onBack()" [disabled]="currentPage <= 1" icon="pi pi-angle-left"
+            class="prethodna"></button>
+        <button pButton label="Sljedeća" (click)="onNext()" [disabled]="currentPage >= 504" icon="pi pi-angle-right"
+            iconPos="right" class="sljedeća"></button>
     </div>
 </div>
